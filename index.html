@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>FireBase Full-Stack App</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+		<!-- Firebase CDN -->
+		<script src='https://cdn.firebase.com/js/client/2.4.1/firebase.js'></script>
+
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="navContain">
+				<div class="logo">
+						<h1 id="title">No Name</h1>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="outter-box">
+				<div class="inner-box">
+					<div class="box-heading"> Top Post </div>
+					<div class="box-body">
+						<ol class="top-message">
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<div class="outter-box">
+				<div class="inner-box">
+					<div class="box-heading"> Express your Thoughts with no Repercussions </div>
+					<div class="box-body">
+						<form action="" id="message-form">
+            <div class="form-message">
+              <label>What's on your mind:</label>
+              <textarea id="thought" type="text" class="form-textbox"></textarea>
+            </div>
+            <button class="btn btn-default">Post Your Thought!!</button>
+          </form>
+					</div>
+				</div>
+			</div>
+
+			<div class="outter-box">
+				<div class="inner-box">
+					<div class="box-heading"> Message Board </div>
+					<div class="box-body" id="lastBoxBody">
+						<ul class="message-board">
+          </ul>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDjpcwLkGBZHUuMKddrumi0NTmnMi6jZ0g",
+		    authDomain: "safeplace-ca64a.firebaseapp.com",
+		    databaseURL: "https://safeplace-ca64a.firebaseio.com",
+		    projectId: "safeplace-ca64a",
+		    storageBucket: "safeplace-ca64a.appspot.com",
+		    messagingSenderId: "491724367410"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
